@@ -1,10 +1,21 @@
+/* ссылка пропустить меню */
+.skiplink {
+    display: none;
+}
+
+/* предупрждение, что js не работает */
+.no-js {
+    display: block;
+}
+
 @media print {
     body {
         font-size: 18px;
         font-family: "Times New Roman", serif;
     }
-}
 
-.skiplink {
-    display: none;
+    /* предупрждение, что js не работает */
+    .no-js {
+        display: none;
+    } 
 }
