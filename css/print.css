@@ -4,3 +4,7 @@
         font-family: "Times New Roman", serif;
     }
 }
+
+.skiplink {
+    display: none;
+}
