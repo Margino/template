@@ -29,13 +29,9 @@ html {
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
             text-size-adjust: 100%;
-}
-
-/* пользователь хочет минимизировать анимации */
-@media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+    
+    /* плавная прокрутка */
+    scroll-behavior: smooth;
 }
 
 *,
@@ -109,7 +105,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
 }
 
 /* ссылки */
-
 a {
     outline: 0;
 }
@@ -138,4 +133,18 @@ body.tabbing a:focus:not([tabindex="-1"]) {
     outline: 4px solid var(--outline);
     outline-offset: 2px;
     transition: none;
+}
+
+
+
+/* пользователь хочет минимизировать анимации */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation: none !important;
+        background-attachment: initial !important;
+        scroll-behavior: initial !important;
+        transition: none !important;
+    }
 }
