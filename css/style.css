@@ -1,5 +1,6 @@
 :root {
     --indent: 8px;
+    --fontSize: 18px;
 }
 
 html {
@@ -9,6 +10,7 @@ html {
 
     font-weight: normal;
     font-size: 18px;
+    font-size: var(--fontSize);
     line-height: 1.15;
     line-height: calc(var(--indent) * 3);
     vertical-align: baseline;
