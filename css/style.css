@@ -26,18 +26,17 @@ html {
             text-size-adjust: 100%;
 }
 
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 /* пользователь хочет минимизировать анимации */
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
     }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -56,4 +55,8 @@ body {
     font-style: inherit;
 
     border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
 }
