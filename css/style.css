@@ -9,6 +9,7 @@ html {
 
     font-weight: normal;
     font-size: 18px;
+    line-height: 1.15;
     line-height: calc(var(--indent) * 3);
     vertical-align: baseline;
     font-style: normal;
