@@ -4,6 +4,9 @@ document.body.classList.remove('tabbing');
 // показываем фокус при использовании клавиши tab
 window.addEventListener('keydown', handleFirstTab);
 
+// обратная связть
+// console.info('%c%s', 'font-weight: bold', 'Нашли ошибку!? Напишите, пожалуйста, мне об этом https://github.com/Margino/');
+
 // ========== Functions ========== //
 
 // используем tab
