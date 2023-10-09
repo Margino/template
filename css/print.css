@@ -1,11 +1,30 @@
-/* ссылка пропустить меню */
-.skiplink {
-    display: none;
-}
-
 /* предупрждение, что js не работает */
 .no-js {
     display: block;
+}
+
+/* ссылка пропустить меню */
+.skiplink {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px 20px;
+    overflow: visible;
+    color: #ffffff !important;
+    white-space: inherit;
+    background: #000000;
+    clip: auto;
+    clip-path: none;
+}
+
+body a:focus:not([tabindex="-1"]) {
+    color: var(--lk_hover);
+    text-decoration: none;
+    border-bottom-color: transparent;
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+    transition: none;
 }
 
 @media print {
@@ -17,5 +36,21 @@
     /* предупрждение, что js не работает */
     .no-js {
         display: none;
-    } 
+    }
+
+    /* ссылка пропустить меню */
+    .skiplink {
+        display: none;
+    }
+
+    /* ссылки */
+    a {
+        color: #000 !important;
+    }
+
+    /* показываем адрес ссылки */
+    a[href]:not([href^="#"])::after {
+        content: " → (" attr(href) ")";
+        color: currentColor;
+    }
 }

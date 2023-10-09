@@ -2,6 +2,11 @@
     --indent: 8px;
     --fontSize: 18px;
     --txtColor: #222;
+    --lk: #0046CC;
+    --lk_hover: #FA5F5F;
+    --lk_visited: #6a1b9a;
+    --mark: #ffdb4d;
+    --outline: #42a5f5;
 }
 
 html {
@@ -72,6 +77,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
 
 /* ссылка пропустить меню */
 .skiplink {
+    display: inline-block;
     position: absolute;
     z-index: 100; /* поверх всех окон */
     width: 1px;
@@ -95,9 +101,41 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
     margin: 0;
     padding: 10px 20px;
     overflow: visible;
-    color: #ffffff !important;
+    color: #fff !important;
     white-space: inherit;
-    background: #000000;
+    background: #000;
     clip: auto;
     clip-path: none;
+}
+
+/* ссылки */
+
+a {
+    outline: 0;
+}
+
+a:link {
+    color: var(--lk);
+}
+
+a:visited {
+    color: var(--lk_visited);
+}
+
+a:hover {
+    color: var(--lk_hover);
+}
+
+a:active {
+    color: var(--lk_hover);
+    text-decoration: none;
+}
+
+body.tabbing a:focus:not([tabindex="-1"]) {
+    color: var(--lk_hover);
+    text-decoration: none;
+    border-bottom-color: transparent;
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+    transition: none;
 }
