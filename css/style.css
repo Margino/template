@@ -18,11 +18,19 @@ html {
     font-style: normal;
 
     border: 0;
+    box-sizing: border-box;
 
     /* предотвращаем увеличение шрифта в iOS */
     -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
             text-size-adjust: 100%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 /* пользователь хочет минимизировать анимации */
