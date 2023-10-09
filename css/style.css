@@ -1,6 +1,7 @@
 :root {
     --indent: 8px;
     --fontSize: 18px;
+    --txtColor: #222;
 }
 
 html {
@@ -43,6 +44,7 @@ body {
     font-family: "Roboto", "Helvetica Neue", "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Arial", sans-serif;
     vertical-align: baseline;
     color: #222;
+    color: var(--txtColor);
     font-style: inherit;
 
     border: 0;
